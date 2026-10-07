@@ -1,0 +1,34 @@
+[
+  {
+    "file": "algo_initiation.pdf",
+    "language": "universal"
+  },
+  {
+    "file": "algorithmique-programmation.pdf",
+    "language": "universal"
+  },
+  {
+    "file": "cours_C.pdf",
+    "language": "c"
+  },
+  {
+    "file": "cours_Java.pdf",
+    "language": "java"
+  },
+  {
+    "file": "cours_python.pdf",
+    "language": "python"
+  },
+  {
+    "file": "Initiation_algo.pdf",
+    "language": "universal"
+  },
+  {
+    "file": "l'algorithmique.pdf",
+    "language": "universal"
+  },
+  {
+    "file": "programmation.pdf",
+    "language": "universal"
+  }
+]

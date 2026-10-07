@@ -1,0 +1,21 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: algo_tutor_db
+    environment:
+      POSTGRES_USER: tutor
+      POSTGRES_PASSWORD: tutor
+      POSTGRES_DB: algo_tutor
+    ports:
+      - "15432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./init_db:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tutor -d algo_tutor"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  pgdata:
